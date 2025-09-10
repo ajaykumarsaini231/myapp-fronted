@@ -17,7 +17,7 @@ const OtpPage: React.FC = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/auth/verify-otp",
+        "https://api-key-xi.vercel.app/api/auth/verify-otp",
         { email, otp },
         { headers: { "Content-Type": "application/json" } }
       );

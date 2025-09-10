@@ -18,7 +18,7 @@ const SignupPage: React.FC = () => {
     setLoading(true);
     setErrorMsg("");
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/signup", formData, {
+      const res = await axios.post("https://api-key-xi.vercel.app/api/auth/signup", formData, {
         headers: { "Content-Type": "application/json" },
       });
 
